@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.item_user.view.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import retrofit2.http.GET
 
-class UserAdapter (val data: List<UserItem>?,val clicked:onClickItem ): RecyclerView.Adapter<UserAdapter.UserHolder>() {
+class UserAdapter (val data: List<UserItem?>?,val clicked:onClickItem ): RecyclerView.Adapter<UserAdapter.UserHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserAdapter.UserHolder {

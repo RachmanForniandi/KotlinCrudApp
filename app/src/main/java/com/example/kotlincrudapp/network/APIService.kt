@@ -30,5 +30,5 @@ interface APIService {
 
     @FormUrlEncoded
     @POST("deleteUser")
-    fun deleteData(@Field("id")id:String):Call<ResultStatus>
+    fun deleteData(@Field("id")id:String?):Call<ResultStatus>
 }
